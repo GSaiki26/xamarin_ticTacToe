@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ticTacToe.MainPage">
+
+    <StackLayout>
+        <Label Text="Jogo da velha"></Label>
+        <Label x:Name="LabelVictory" Text="" TextColor="Gold"></Label>
+        <Label x:Name="LabelError" Text="" TextColor="DarkRed"></Label>
+        <Button x:Name="ButtonClear" Text="Limpar" Clicked="ButtonClear_Clicked"></Button>
+        <Grid x:Name="GridHash">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Button Text=" " Grid.Row="0" Grid.Column="0" Clicked="Button_Clicked"></Button>
+            <Button Text=" " Grid.Row="0" Grid.Column="1" Clicked="Button_Clicked"></Button>
+            <Button Text=" " Grid.Row="0" Grid.Column="2" Clicked="Button_Clicked"></Button>
+
+            <Button Text=" " Grid.Row="1" Grid.Column="0" Clicked="Button_Clicked"></Button>
+            <Button Text=" " Grid.Row="1" Grid.Column="1" Clicked="Button_Clicked"></Button>
+            <Button Text=" " Grid.Row="1" Grid.Column="2" Clicked="Button_Clicked"></Button>
+
+            <Button Text=" " Grid.Row="2" Grid.Column="0" Clicked="Button_Clicked"></Button>
+            <Button Text=" " Grid.Row="2" Grid.Column="1" Clicked="Button_Clicked"></Button>
+            <Button Text=" " Grid.Row="2" Grid.Column="2" Clicked="Button_Clicked"></Button>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
